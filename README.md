@@ -1,0 +1,24 @@
+# SQL Practice — Basics
+
+Practice queries covering core SQL fundamentals using a sample `students` table
+(columns: `id`, `name`, `branch`, `age`).
+
+## Concepts covered
+- `SELECT` — choosing columns to return
+- `WHERE` — filtering rows by condition
+- `ORDER BY` — sorting results (`ASC` / `DESC`)
+- `LIMIT` — restricting the number of rows returned
+
+## Example queries
+See [`basics.sql`](./basics.sql) for the full set. Highlights:
+
+```sql
+-- All students in CSE branch
+SELECT name FROM students WHERE branch = 'CSE';
+
+-- Oldest student above 19
+SELECT * FROM students WHERE age > 19 ORDER BY age DESC LIMIT 1;
+```
+
+## Next up
+Moving on to `JOIN`s and multi-table queries.
