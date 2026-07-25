@@ -1,0 +1,8 @@
+-- LeetCode 595: Big Countries
+-- A country is "big" if area >= 3,000,000 OR population >= 25,000,000.
+-- Return name, population, and area of all big countries.
+
+SELECT name, population, area
+FROM World
+WHERE area >= 3000000
+   OR population >= 25000000;
