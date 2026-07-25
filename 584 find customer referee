@@ -1,0 +1,8 @@
+-- LeetCode 584: Find Customer Referee
+-- Find names of customers NOT referred by customer with id = 2.
+-- Note: NULL can't be compared with <>, so it must be checked separately with IS NULL.
+
+SELECT name
+FROM Customer
+WHERE referee_id <> 2
+   OR referee_id IS NULL;
