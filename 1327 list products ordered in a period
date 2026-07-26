@@ -1,0 +1,16 @@
+-- LeetCode 1327: List the Products Ordered in a Period
+-- Find product names ordered in Feb 2020 with total quantity >= 100.
+-- Combines JOIN, date filtering, GROUP BY, and HAVING (filtering
+-- after aggregation, since WHERE can't filter on SUM()).
+
+SELECT
+    p.product_name,
+    SUM(o.unit) AS unit
+FROM Products p
+JOIN Orders o
+    ON p.product_id = o.product_id
+WHERE o.order_date BETWEEN '2020-02-01' AND '2020-02-29'
+GROUP BY
+    p.product_id,
+    p.product_name
+HAVING SUM(o.unit) >= 100;
