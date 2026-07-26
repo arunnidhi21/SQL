@@ -1,0 +1,9 @@
+-- LeetCode 1148: Article Views I
+-- Find all people who viewed at least one of their own articles.
+-- DISTINCT avoids repeat rows for authors who viewed their own work
+-- multiple times.
+
+SELECT DISTINCT author_id AS id
+FROM Views
+WHERE author_id = viewer_id
+ORDER BY author_id;
