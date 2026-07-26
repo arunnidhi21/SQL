@@ -22,3 +22,7 @@ SELECT * FROM students WHERE age > 19 ORDER BY age DESC LIMIT 1;
 
 ## Next up
 Moving on to `JOIN`s and multi-table queries.
+
+| 1148 | [Article Views I](1148-article-views-i.sql) | DISTINCT, ORDER BY |
+| 1683 | [Invalid Tweets](1683-invalid-tweets.sql) | LENGTH() function |
+| 1327 | [List the Products Ordered in a Period](1327-list-products-ordered-in-a-period.sql) | JOIN, GROUP BY, HAVING |
