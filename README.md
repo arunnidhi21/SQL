@@ -26,3 +26,6 @@ Moving on to `JOIN`s and multi-table queries.
 | 1148 | [Article Views I](1148-article-views-i.sql) | DISTINCT, ORDER BY |
 | 1683 | [Invalid Tweets](1683-invalid-tweets.sql) | LENGTH() function |
 | 1327 | [List the Products Ordered in a Period](1327-list-products-ordered-in-a-period.sql) | JOIN, GROUP BY, HAVING |
+| 1050 | [Actors and Directors Who Cooperated At Least Three Times](1050-actors-and-directors.sql) | GROUP BY (multi-column), HAVING |
+| 1211 | [Queries Quality and Percentage](1211-queries-quality-and-percentage.sql) | Conditional aggregation, ROUND |
+| 181 | [Employees Earning More Than Their Managers](0181-employees-earning-more-than-managers.sql) | Self-join |
