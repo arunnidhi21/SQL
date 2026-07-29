@@ -1,0 +1,9 @@
+-- LeetCode 197: Rising Temperature
+-- Self-join each day's row to the row exactly one day before it,
+-- then compare temperatures.
+
+SELECT today.id
+FROM Weather today
+JOIN Weather yesterday
+    ON today.recordDate = DATE_ADD(yesterday.recordDate, INTERVAL 1 DAY)
+WHERE today.temperature > yesterday.temperature;
