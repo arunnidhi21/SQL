@@ -29,3 +29,7 @@ Moving on to `JOIN`s and multi-table queries.
 | 1050 | [Actors and Directors Who Cooperated At Least Three Times](1050-actors-and-directors.sql) | GROUP BY (multi-column), HAVING |
 | 1211 | [Queries Quality and Percentage](1211-queries-quality-and-percentage.sql) | Conditional aggregation, ROUND |
 | 181 | [Employees Earning More Than Their Managers](0181-employees-earning-more-than-managers.sql) | Self-join |
+
+| 1731 | [The Number of Employees Which Report to Each Employee](1731-employees-report-to-each-employee.sql) | Self-join, GROUP BY, ROUND |
+| 197 | [Rising Temperature](0197-rising-temperature.sql) | Self-join on date offset |
+| 262 | [Trips and Users](0262-trips-and-users.sql) | Hard — double join, conditional aggregation |
