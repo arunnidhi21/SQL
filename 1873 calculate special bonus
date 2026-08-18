@@ -1,0 +1,11 @@
+-- LeetCode 1873: Calculate Special Bonus
+-- Bonus = salary if employee_id is odd AND name doesn't start with 'M',
+-- else 0.
+
+SELECT
+    employee_id,
+    CASE
+        WHEN employee_id % 2 = 1 AND name NOT LIKE 'M%' THEN salary
+        ELSE 0
+    END AS bonus
+FROM Employees;
