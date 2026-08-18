@@ -1,0 +1,11 @@
+-- LeetCode 1667: Fix Names in a Table
+-- Capitalize only the first letter of each name, lowercase the rest.
+
+SELECT
+    user_id,
+    CONCAT(
+        UPPER(LEFT(name, 1)),
+        LOWER(SUBSTRING(name, 2))
+    ) AS name
+FROM Users
+ORDER BY user_id;
