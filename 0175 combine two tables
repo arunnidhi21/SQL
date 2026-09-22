@@ -1,0 +1,9 @@
+-- LeetCode 175: Combine Two Tables
+-- Report firstName, lastName, city, state for every person, even
+-- those with no address on file. LEFT JOIN keeps all Person rows;
+-- unmatched address columns come back as NULL.
+
+SELECT p.firstName, p.lastName, a.city, a.state
+FROM Person p
+LEFT JOIN Address a
+    ON p.personId = a.personId;
